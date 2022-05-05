@@ -1,0 +1,187 @@
+.App {
+  margin: 1rem;
+  width: 100%;
+  /* overflow-x: hidden; */
+  display: flex;
+  font-size: 18px;
+}
+
+.userList {
+  width: 65%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.user {
+  display: flex;
+  margin: 2rem;
+  margin-left: 2rem;
+  width: 100%;
+  height: 10rem;
+  border: 1px solid rgb(212, 203, 203);
+  border-radius: 999px;
+  gap: 2rem;
+  transition: 0.3s ease-in-out;
+}
+
+.user:hover {
+  transform: translateY(-1rem);
+  background-color: rgb(213, 220, 226);
+  box-shadow: 3px 3px 0 rgb(0 0 0 / 35%);
+}
+
+.user img {
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+.info {
+  width: 120px;
+  transform: translateY(-0.8rem);
+  margin-left: 1rem;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+}
+
+.btn {
+  width: 4rem;
+  height: 3rem;
+  padding: 0.7rem 1.5rem auto;
+  margin-top: 1rem;
+  background: #465b77;
+  transform: translateX(3rem);
+  font-size: 1.5rem;
+  border: none;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.35);
+  color: #ffffff;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.btn:first-child {
+  background: rgb(158, 76, 76);
+}
+
+.btn:hover {
+  background-color: #829ec4;
+}
+
+.popup-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.popup-box .box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  width: 100%;
+  max-width: 500px;
+  justify-content: center;
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
+.form-title {
+  display: flex;
+  justify-content: space-between;
+  color: #465b77;
+}
+
+.close {
+  position: fixed;
+  font-size: 2rem;
+  background: rgb(206, 215, 221);
+  border: none;
+  right: 0;
+  top: 20px;
+  cursor: pointer;
+  color: #465b77;
+}
+
+.close:hover {
+  color: rgb(158, 76, 76);
+}
+
+.popup-box .btn:hover {
+  background-color: rgb(74, 124, 148);
+}
+
+.addUser {
+  margin: 1rem 5rem;
+  width: 30%;
+}
+
+.userForm {
+  width: 400px;
+  height: 600px;
+  max-width: 600px;
+  background-color: rgb(206, 215, 221);
+  padding: 60px 60px;
+  max-width: 600px;
+  border-radius: 30px;
+}
+
+.userForm h1 {
+  text-align: center;
+}
+
+.form-text {
+  color: rgb(129, 142, 153);
+  padding-top: 0.5rem;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form-text label {
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.form-text input {
+  width: 85%;
+  max-width: 370px;
+  height: 40px;
+  padding: 0 2rem;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  outline: none;
+  background-color: #f2f3f5;
+  border: 0;
+}
+
+.userForm .btn {
+  width: 75%;
+  display: inline-block;
+  background: #465b77;
+  color: #ffffff;
+  padding: 0.7rem 1.5rem;
+  font-size: 24px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.35);
+  border-radius: 999px;
+  margin-top: 3rem;
+}
+
+.userForm button:hover {
+  opacity: 0.8;
+}
